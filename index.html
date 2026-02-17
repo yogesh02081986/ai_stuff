@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northfield Academy | Future-Ready Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="brand">Northfield Academy</div>
+        <a class="btn btn-outline" href="#tour">Book a tour</a>
+      </nav>
+
+      <div class="container hero-content">
+        <p class="eyebrow">Admissions open for 2026</p>
+        <h1>A modern school where curiosity becomes confidence.</h1>
+        <p class="lead">
+          Personalized learning, STEAM labs, and a community that helps every
+          student thrive from kindergarten through graduation.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#programs">Explore programs</a>
+          <a class="btn btn-outline" href="#results">View outcomes</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="programs" class="section container">
+        <h2>Programs built for tomorrow</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>STEM + Creative Arts</h3>
+            <p>Hands-on robotics, coding, digital design, and studio arts for holistic growth.</p>
+          </article>
+          <article class="card">
+            <h3>Personalized Learning Paths</h3>
+            <p>Adaptive instruction and mentorship tailored to each student’s pace and interests.</p>
+          </article>
+          <article class="card">
+            <h3>Global Citizenship</h3>
+            <p>Language immersion, service projects, and leadership opportunities with real-world impact.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="results" class="section alt">
+        <div class="container stats">
+          <div>
+            <p class="value">98%</p>
+            <p>College acceptance rate</p>
+          </div>
+          <div>
+            <p class="value">12:1</p>
+            <p>Student-teacher ratio</p>
+          </div>
+          <div>
+            <p class="value">42</p>
+            <p>Clubs and athletic teams</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tour" class="section container cta">
+        <h2>Visit our campus</h2>
+        <p>Meet our teachers, explore our innovation lab, and experience our vibrant student life.</p>
+        <form class="tour-form" aria-label="Book a campus tour">
+          <label>
+            Parent name
+            <input type="text" placeholder="Jane Lee" required />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="jane@example.com" required />
+          </label>
+          <button class="btn" type="submit">Request a tour</button>
+        </form>
+        <p class="form-message" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Northfield Academy. Building bright futures.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
